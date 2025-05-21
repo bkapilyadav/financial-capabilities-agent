@@ -35,7 +35,9 @@ collateral = st.text_input('🏡 Any Surety (Gold, Land, Property)?')
 cibil_score = st.number_input('💯 Enter Estimated CIBIL Score', min_value=300, max_value=900, step=1)
 
 # OpenAI API Key input (Streamlit Cloud secrets preferred instead)
-openai_api_key = st.text_input('🔑 Enter your OpenAI API Key', type='password')
+import streamlit as st
+
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # CIBIL Report Parsing
 cibil_text = ""
