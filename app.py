@@ -29,7 +29,9 @@ collateral = st.text_input('🏡 Any Surety (Gold, Land, Property)?')
 
 
 # OpenAI API Key
-openai_api_key = st.text_input('🔑 Enter your OpenAI API Key', type='password')
+import streamlit as st
+
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 
 from modules.ocr_utils import extract_text_from_image, extract_text_from_pdf
