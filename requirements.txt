@@ -4,3 +4,4 @@ pytesseract
 pdfplumber
 pillow
 python-dotenv
+PyMuPDF==1.23.5 
